@@ -12,7 +12,6 @@ import javax.inject.Inject
 class DataStoreViewModel @Inject constructor(private val dataStoreRepository: DataStoreRepository) :
     ViewModel() {
 
-
     fun incrementCount() {
         viewModelScope.launch {
             dataStoreRepository.incrementCounter()

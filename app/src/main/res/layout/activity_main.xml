@@ -14,11 +14,10 @@
         android:textSize="62sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDecrement"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIncrement"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonIncrement"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintStart_toEndOf="@+id/buttonDecrement"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonIncrement"
@@ -27,9 +26,9 @@
         android:text="+"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/textInput"
-        app:layout_constraintEnd_toStartOf="@+id/textInput"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInput"
         app:layout_constraintTop_toTopOf="@+id/textInput">
 
     </com.google.android.material.button.MaterialButton>
@@ -41,9 +40,9 @@
         android:text="-"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/textInput"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textInput"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textInput"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textInput"></com.google.android.material.button.MaterialButton>
 
     <androidx.constraintlayout.widget.Guideline
